@@ -13,7 +13,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": ""
+    "test": "",
+    "export": "next export"
   },
   "dependencies": {
     "axios": "^0.27.2",
