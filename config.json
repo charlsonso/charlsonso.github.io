@@ -1,16 +1,16 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "Charlson So - Software Engineer",
+  "name": "Charlson So",
+  "ascii": "CV OS",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "charlsonso",
+    "linkedin": "charlson-so-4511aaa2"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "charlsonsoo@gmail.com",
+  "ps1_hostname": "",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "repo": "https://github.com/charlsonso",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/cveinnt",
@@ -18,22 +18,22 @@
   },
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
-    },
+      "background": "#F8F8F2",
+      "foreground": "#272822",
+      "yellow": "#F4BF75",
+      "green": "#A6E22E",
+      "gray": "#AE81FF",
+      "blue": "#66D9EF",
+      "red": "#F92672"
+    },  
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "background": "#272822",
+      "foreground": "#F8F8F2",
+      "yellow": "#F4BF75",
+      "green": "#A6E22E",
+      "gray": "#AE81FF",
+      "blue": "#66D9EF",
+      "red": "#F92672"
     }
   }
 }

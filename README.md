@@ -1,3 +1,6 @@
+# LiveTerm Mod by Charlson So
+Modified LiveTerm for Charlson So's CV
+
 # [💻 LiveTerm - build terminal styled websites in minutes!](https://liveterm.vercel.app)
 
 Highly customizable, easy-to-use, and minimal terminal styled website template, powered by Next.js.
