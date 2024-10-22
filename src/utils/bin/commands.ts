@@ -141,17 +141,18 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
 
-Type 'help' to see the list of available commands.
+ ██████╗██╗  ██╗ █████╗ ██████╗ ██╗     ███████╗ ██████╗ ███╗   ██╗    ███████╗ ██████╗ 
+██╔════╝██║  ██║██╔══██╗██╔══██╗██║     ██╔════╝██╔═══██╗████╗  ██║    ██╔════╝██╔═══██╗
+██║     ███████║███████║██████╔╝██║     ███████╗██║   ██║██╔██╗ ██║    ███████╗██║   ██║
+██║     ██╔══██║██╔══██║██╔══██╗██║     ╚════██║██║   ██║██║╚██╗██║    ╚════██║██║   ██║
+╚██████╗██║  ██║██║  ██║██║  ██║███████╗███████║╚██████╔╝██║ ╚████║    ███████║╚██████╔╝
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝ ╚═════╝ 
+Welcome! I am a versatile software engineer with a passion for exploring diverse fields of technology. While my current focus is on embedded software development, my experience spans across graphics, autonomous robotics, simulation, C-based application development, machine learning, and web development. I enjoy tackling complex challenges and continuously expanding my skill set in cutting-edge technologies. 
+
+Type 'list' to view a list of my projects and work experience.
 Type 'sumfetch' to display summary.
+Type 'help' to see the list of available commands.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
