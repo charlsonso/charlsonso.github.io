@@ -18,24 +18,8 @@ export const help = async (args: string[]): Promise<string> => {
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+Type 'info' to display summary.
 `;
-};
-
-// Redirection
-export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return 'Opening Github repository...';
-};
-
-// About
-export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -43,13 +27,8 @@ export const resume = async (args: string[]): Promise<string> => {
   return 'Opening resume...';
 };
 
-// Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
+export const donut = async (args: string[]): Promise<string> => {
+  return 'working on a donut...'
 };
 
 // Contact
@@ -58,6 +37,7 @@ export const email = async (args: string[]): Promise<string> => {
   return `Opening mailto:${config.email}...`;
 };
 
+//Github
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
 
@@ -70,71 +50,34 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
-
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
-
-// Typical linux commands
-export const echo = async (args: string[]): Promise<string> => {
-  return args.join(' ');
-};
-
 export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
+  return `Work in progress... Should list projects and links to resume...
+`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `unfortunately, disk space is expensive...`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
 
 export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
-};
-
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
+  return `Oh your so silly... This isn't a real terminal!`;
 };
 
 export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+  return `emacs?? just use vim`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); //I'm not sorry
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
@@ -148,11 +91,11 @@ export const banner = (args?: string[]): string => {
 ██║     ██╔══██║██╔══██║██╔══██╗██║     ╚════██║██║   ██║██║╚██╗██║    ╚════██║██║   ██║
 ╚██████╗██║  ██║██║  ██║██║  ██║███████╗███████║╚██████╔╝██║ ╚████║    ███████║╚██████╔╝
  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝ ╚═════╝ 
-Welcome! I am a versatile software engineer with a passion for exploring diverse fields of technology. While my current focus is on embedded software development, my experience spans across graphics, autonomous robotics, simulation, C-based application development, machine learning, and web development. I enjoy tackling complex challenges and continuously expanding my skill set in cutting-edge technologies. 
+Welcome! I am a software engineer with a passion for C, C++, python, javascript, and go. While my current focus is in embedded software development in aerospace, my experience spans across various fields such as graphics, autonomous robotics, simulation, machine learning, and web development. I enjoy tackling complex challenges and continuously expanding my skill set in cutting-edge technologies. 
 
-Type 'list' to view a list of my projects and work experience.
-Type 'sumfetch' to display summary.
+Type 'ls' to view a list of my projects and work experience.
+Type 'info' to display a summary.
 Type 'help' to see the list of available commands.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
+//Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 };
