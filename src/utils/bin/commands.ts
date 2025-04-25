@@ -93,7 +93,6 @@ export const banner = (args?: string[]): string => {
  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝ ╚═════╝ 
 Welcome! I am a software engineer with a passion for C, C++, python, javascript, and go. While my current focus is in embedded software development in aerospace, my experience spans across various fields such as graphics, autonomous robotics, simulation, machine learning, and web development. I enjoy tackling complex challenges and continuously expanding my skill set in cutting-edge technologies. 
 
-Type 'ls' to view a list of my projects and work experience.
 Type 'info' to display a summary.
 Type 'help' to see the list of available commands.
 `;
