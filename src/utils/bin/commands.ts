@@ -55,8 +55,16 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `Work in progress... Should list projects and links to resume...
-`;
+  return `
+          Raytheon Intelligence and Space (2019-2025)\n
+=============================================================\n
+My time at Raytheon was spent mostly on airborne radars and radar warning recievers.\n
+\n
+             Jet Propulsion Laboratory (2018-2019)\n
+=============================================================\n
+During my internship at JPL, I developed primary on Python developing test software for\n
+an architecture of robotic boats.\n
+  `;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
